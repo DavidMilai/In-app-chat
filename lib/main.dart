@@ -36,13 +36,13 @@ class _MyHomePageState extends State<MyHomePage> {
     super.initState();
     String appKey;
     String accessKey;
-    appKey = "INSERT_ANDROID_APP_KEY";
-    accessKey = "INSERT_ANDROID_ACCESS_KEY";
+    appKey =
+        "YbqnPkWjR8Rl%2F8AdTILrue28nwMzFDHysRD64PiK2SDeh3%2F0hvSx8CyTm%2BwHDCPz";
+    accessKey =
+        "ykaIjyBUW5jJc5KLyG6wVCHA7FXAzzIaHcPVPCMKWMZIwI4usf5bMdNIWbSCFaiwctLnIsoqSfI4i92dnDoTX71hFFuI0s9wJft6m0u8p4TwumhTTZa2qa4NwUUZI%2BalmUePK7l8BuBq44IT3P%2FU64wNVomDHwUJ8hm%2BM5aVQiA%3D";
     ZohoSalesIQ.init(appKey, accessKey).then((_) {
-      // initialization successful
-      ZohoSalesIQ.showLauncher(true); // Invoking showLauncher is optional.
+      ZohoSalesIQ.showLauncher(true);
     }).catchError((error) {
-      // initialization failed
       print(error);
     });
   }
@@ -60,14 +60,15 @@ class _MyHomePageState extends State<MyHomePage> {
         title: Text(widget.title),
       ),
       body: Center(
-        child: ZohoChat(
-          zohoWidgetCode: "xxxxx", //zoho salesiq chat widget code
-          chatPreloaderSize: 100.0, //preloader size
-          chatPreloaderWidth: 3, //preloader border size
-          chatPreloaderColorHexString: "#2196f3", //preloader color code
-          showMinimizeChatWidget:
-              true, //either to show or hide the minimize widget
-        ),
+        child: Text("hello"),
+        // child: ZohoChat(
+        //   zohoWidgetCode: "xxxxx", //zoho salesiq chat widget code
+        //   chatPreloaderSize: 100.0, //preloader size
+        //   chatPreloaderWidth: 3, //preloader border size
+        //   chatPreloaderColorHexString: "#2196f3", //preloader color code
+        //   showMinimizeChatWidget:
+        //       true, //either to show or hide the minimize widget
+        // ),
       ),
       floatingActionButton: FloatingActionButton(
           onPressed: _incrementCounter,
